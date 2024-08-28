@@ -1,0 +1,25 @@
+input {
+    width: 25%;
+    padding: 6px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    }
+
+    table {
+    margin-top: 20px;
+    width: 70%;
+    border-collapse: collapse;
+    }
+        
+    table, th, td {
+    border: 1px solid rgb(0, 0, 0);
+    color: #000000;
+    }
+        
+    th, td {
+    padding: 10px;
+    text-align: left;
+        }
