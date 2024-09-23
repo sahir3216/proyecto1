@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>Gestión de productos</h2>
+        <h3>Registros de productos</h3>
+        <div>
+            <h4>Producto</h4>
+            <input type="text" id="producto" placeholder="Ingresar">
+        </div>
+        <div>
+            <h4>Descripción</h4>
+            <input type="text" id="descripcion" placeholder="Ingresar">
+        </div>
+        <div>
+            <h4>Precio</h4>
+            <input type="number" id="precio" placeholder="Ingresar">
+        </div>
+        <div>
+            <h4>Cantidad</h4>
+            <input type="number" id="cantidad" placeholder="Ingresar">
+        </div>
+        <div>
+            <button id="agregarProducto">Agregar producto</button>
+            <h5>Precio total</h5>
+        </div>
+
+        <h2>Búsqueda de productos</h2>
+        <input type="text" id="buscador" placeholder="Ingresar">
+        <button id="buscar">Buscar producto</button>
+    </div>
+
+    <div>
+        <table id="tabladeproductos">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Propiedades</th> <!-- Agregamos la columna de acciones -->
+                </tr>
+            </thead>
+            <tbody id="tbodyproducto"></tbody>
+        </table>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

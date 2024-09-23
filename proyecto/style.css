@@ -1,0 +1,136 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+/* Container for the form and table */
+div {
+    max-width: 600px; /* Hacemos el contenedor más angosto */
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+/* Headings */
+h1, h3, h4, h5 {
+    margin: 8px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Form styles */
+h4 {
+    margin-bottom: 3px; /* Reducimos el espacio entre los h4 y los inputs */
+    font-size: 14px; /* Tamaño más pequeño para h4 */
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px; /* Reducimos el margen debajo del input */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style for actions buttons in the table */
+table button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+table button:hover {
+    background-color: #c82333;
+}
+
+table button[data-action="edit"] {
+    background-color: #28a745;
+}
+
+table button[data-action="edit"]:hover {
+    background-color: #218838;
+}
+
+/* Search bar style */
+input#buscador {
+    width: 100%;
+    padding: 6px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input#buscador:focus {
+    outline: none;
+    border-color: #007bff;
+}
